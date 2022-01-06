@@ -9,6 +9,7 @@ function BookList() {
     </section>
   );
 }
+
 function Book() {
   return (
     <article className="book">
