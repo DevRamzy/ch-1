@@ -1,0 +1,9 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+  margin-right: 10rem;
+  margin-top: 2rem;
+  justify-content: space-evenly;
+  background-color: black;
+  width: 100%;
+}
