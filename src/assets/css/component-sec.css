@@ -1,9 +1,36 @@
+@font-face {
+  font-family: "Astro";
+  src: local("Astro"), url(../fonts/astro.ttf) format("truetype");
+}
+
 .main-nav {
   display: flex;
   align-items: center;
   margin-right: 10rem;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   justify-content: space-evenly;
   background-color: black;
   width: 100%;
+}
+
+.hero {
+  background-image: url(../../../public/images/preview.jpg);
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  height: 70vh;
+  width: 100%;
+}
+.featured-section {
+  text-align: center;
+}
+
+.featured-cards {
+  display: flex;
+  justify-content: center;
+}
+
+.featured-card {
+  background-color: white;
+  width: 18rem;
+  margin: 0 3rem;
 }

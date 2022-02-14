@@ -27,6 +27,10 @@ export class NavLogo extends React.Component {
 
 export class NavHola extends React.Component {
   render() {
-    return <Button className="nav-hola">{this.props.name}</Button>;
+    return (
+      <Button className="nav-hola" href={this.props.href}>
+        {this.props.name}
+      </Button>
+    );
   }
 }

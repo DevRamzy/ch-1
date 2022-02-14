@@ -14,7 +14,7 @@ export class Navbar extends React.Component {
         <NavLink name="Pricing" />
         <NavLink name="Contact" />
         <NavLink name="Blog" />
-        <NavHola name="Hola" />
+        <NavHola name="Button" href="./" />
       </nav>
     );
   }
