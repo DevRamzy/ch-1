@@ -70,3 +70,20 @@
   font-size: 1.3rem;
   font-weight: 500;
 }
+/* Topbar */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1rem;
+  margin: 0 auto;
+}
+
+/* Welcome Section */
+.welcome-note {
+}
+.welcome-note p {
+  color: antiquewhite;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+}
