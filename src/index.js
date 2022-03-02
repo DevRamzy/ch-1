@@ -15,7 +15,8 @@ import {
 import { Footer } from "./components/footer";
 
 // Import CSS
-import "./index.css";
+import "./assets/css/index.css";
+import "./assets/css/cards.css";
 
 // Import Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -24,8 +25,8 @@ class HomePage extends React.Component {
   render() {
     return (
       <body className="body">
-        <header>
-          <TopBar message="What's up my people..."></TopBar>
+        <header className="header">
+          <TopBar message="New site Look: Cheers!!"></TopBar>
           <Navbar></Navbar>
         </header>
         <Welcome />
@@ -39,4 +40,7 @@ class HomePage extends React.Component {
   }
 }
 
-ReactDom.render(<HomePage />, document.getElementById("root"));
+ReactDom.render(
+  <HomePage />,
+  document.getElementById("root")
+);

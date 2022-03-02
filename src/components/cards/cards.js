@@ -2,11 +2,16 @@ import React from "react";
 
 import { NavHola } from "../buttons/buttons";
 
-import "../../assets/css/component-sec.css";
+import "../../assets/css/cards.css";
+import "../../assets/css/sections.css";
 // Announcements TopBar ontop of the navigation Bar
 export class TopBar extends React.Component {
   render() {
-    return <p className="topbar">{this.props.message}</p>;
+    return (
+      <p className="topbar">
+        {this.props.message}
+      </p>
+    );
   }
 }
 
@@ -26,14 +31,20 @@ export class DarkTextBox extends React.Component {
   render() {
     return (
       <div>
-        <p className="dark-text-box">{this.props.lightText}</p>
+        <p className="dark-text-box">
+          {this.props.lightText}
+        </p>
       </div>
     );
   }
 }
 export class LightTextBox extends React.Component {
   render() {
-    return <p className="light-text-box">{this.props.darkText}</p>;
+    return (
+      <p className="light-text-box">
+        {this.props.darkText}
+      </p>
+    );
   }
 }
 
@@ -68,16 +79,24 @@ export class FooterLinks extends React.Component {
         <ul>
           <h5>{this.props.title}</h5>
           <li>
-            <a href={this.props.href1}>{this.props.link1}</a>
+            <a href={this.props.href1}>
+              {this.props.link1}
+            </a>
           </li>
           <li>
-            <a href={this.props.href2}>{this.props.link2}</a>
+            <a href={this.props.href2}>
+              {this.props.link2}
+            </a>
           </li>
           <li>
-            <a href={this.props.href3}>{this.props.link3}</a>
+            <a href={this.props.href3}>
+              {this.props.link3}
+            </a>
           </li>
           <li>
-            <a href={this.props.href4}>{this.props.link4}</a>
+            <a href={this.props.href4}>
+              {this.props.link4}
+            </a>
           </li>
         </ul>
       </div>

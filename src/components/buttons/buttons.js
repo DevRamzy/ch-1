@@ -1,13 +1,16 @@
 import React from "react";
 
-import "../../assets/css/sub-components.css";
+import "../../assets/css/sections.css";
 
 import { Button } from "reactstrap";
 
 export class NavLink extends React.Component {
   render() {
     return (
-      <a href="./" variant="text" className="nav-button">
+      <a
+        href="./"
+        variant="text"
+        className="nav-button">
         <li>{this.props.name}</li>
       </a>
     );
@@ -28,7 +31,9 @@ export class NavLogo extends React.Component {
 export class NavHola extends React.Component {
   render() {
     return (
-      <Button className="nav-hola" href={this.props.href}>
+      <Button
+        className="nav-hola"
+        href={this.props.href}>
         {this.props.name}
       </Button>
     );

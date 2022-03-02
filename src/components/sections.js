@@ -9,6 +9,8 @@ import {
 } from "./cards/cards";
 import { NavHola } from "./buttons/buttons";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../assets/css/index.css";
+import "../assets/css/sections.css";
 
 // Welcome Section
 export class Welcome extends React.Component {
@@ -17,9 +19,11 @@ export class Welcome extends React.Component {
       <section className="hero">
         <div className="hero-content">
           <WelcomeNote message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, consectetur?" />
-          <WelcomeNote message="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, provident accusantium incidunt dolorem amet ex fugit eaque tenetur pariatur necessitatibus." />
+          <WelcomeNote message="Lorem ipsum dolor sit, ame consectetur adipisicing elit. Sunt, provident accusantium incidunt dolorem amet ex fugit eaque tenetur pariatur necessitatibus." />
           <NavHola href="/" name="Hola"></NavHola>
-          <NavHola herf="./" name="Contact"></NavHola>
+          <NavHola
+            herf="./"
+            name="Contact"></NavHola>
         </div>
       </section>
     );
@@ -118,7 +122,10 @@ export class PartnersSection extends React.Component {
         <div className="partners-list">
           <ul>
             <li>
-              <img src={require("../assets/images/patner-1.png")} alt="" />
+              <img
+                src={require("../assets/images/patner-1.png")}
+                alt=""
+              />
             </li>
             <li></li>
           </ul>

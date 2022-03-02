@@ -3,6 +3,7 @@ import { NavHola } from "./buttons/buttons";
 import { FooterLinks } from "./cards/cards";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../assets/css/sections.css";
 
 // Actual footer
 export class Footer extends React.Component {
@@ -13,7 +14,8 @@ export class Footer extends React.Component {
           <div className="col-md-4">
             <img src="" alt="" />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Atque
               sequi, modi deleniti ab quae rem?
             </p>
           </div>
@@ -23,7 +25,11 @@ export class Footer extends React.Component {
         </section>
         <section className="footer-middle container">
           <div className="row">
-            <FooterLinks title="Useful Links" href1="./" link1="Home" />
+            <FooterLinks
+              title="Useful Links"
+              href1="./"
+              link1="Home"
+            />
             <FooterLinks title="Other Links" />
             <FooterLinks />
             <FooterLinks />
@@ -31,7 +37,10 @@ export class Footer extends React.Component {
         </section>
         <section className="footer-bottom col-md-12">
           <div className="copyright">
-            <p>All Rights Reserved Tech Dynasty 2022</p>
+            <p>
+              All Rights Reserved Tech Dynasty
+              2022
+            </p>
           </div>
           <div className="end-message">
             <p>Happy New Year</p>
