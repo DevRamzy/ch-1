@@ -9,14 +9,21 @@ import {
 } from "./cards/cards";
 import { NavHola } from "./buttons/buttons";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../assets/css/index.css";
+import "../assets/css/styles.css";
 import "../assets/css/sections.css";
 
 // Welcome Section
 export class Welcome extends React.Component {
   render() {
     return (
-      <section className="hero">
+      <section
+        className="hero"
+        style={{
+          backgroundImage: "url(/images/bg-1.jpg)",
+          backgroundSize: "100% auto",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}>
         <div className="hero-content">
           <WelcomeNote message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, consectetur?" />
           <WelcomeNote message="Lorem ipsum dolor sit, ame consectetur adipisicing elit. Sunt, provident accusantium incidunt dolorem amet ex fugit eaque tenetur pariatur necessitatibus." />

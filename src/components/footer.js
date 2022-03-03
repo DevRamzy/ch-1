@@ -4,6 +4,7 @@ import { FooterLinks } from "./cards/cards";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../assets/css/sections.css";
+import "../assets/css/styles.css";
 
 // Actual footer
 export class Footer extends React.Component {

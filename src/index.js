@@ -15,18 +15,20 @@ import {
 import { Footer } from "./components/footer";
 
 // Import CSS
-import "./assets/css/index.css";
+import "./assets/css/styles.css";
 import "./assets/css/cards.css";
+import "./assets/css/sections.css"
 
 // Import Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
 
 class HomePage extends React.Component {
+  
   render() {
     return (
       <body className="body">
-        <header className="header">
           <TopBar message="New site Look: Cheers!!"></TopBar>
+        <header className="header">
           <Navbar></Navbar>
         </header>
         <Welcome />
