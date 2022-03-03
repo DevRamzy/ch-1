@@ -2,8 +2,6 @@ import React from "react";
 
 import "../../assets/css/sections.css";
 
-import { Button } from "reactstrap";
-
 export class NavLink extends React.Component {
   render() {
     return (
@@ -31,11 +29,11 @@ export class NavLogo extends React.Component {
 export class NavHola extends React.Component {
   render() {
     return (
-      <Button
+      <button
         className="nav-hola"
         href={this.props.href}>
         {this.props.name}
-      </Button>
+      </button>
     );
   }
 }

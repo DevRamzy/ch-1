@@ -19,18 +19,16 @@ export class Welcome extends React.Component {
       <section
         className="hero"
         style={{
-          backgroundImage: "url(/images/bg-1.jpg)",
+          backgroundImage:
+            "url(/images/bg-1.jpg)",
           backgroundSize: "100% auto",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}>
         <div className="hero-content">
-          <WelcomeNote message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, consectetur?" />
-          <WelcomeNote message="Lorem ipsum dolor sit, ame consectetur adipisicing elit. Sunt, provident accusantium incidunt dolorem amet ex fugit eaque tenetur pariatur necessitatibus." />
-          <NavHola href="/" name="Hola"></NavHola>
-          <NavHola
-            herf="./"
-            name="Contact"></NavHola>
+          <WelcomeNote message="You're different. So are we. Let's be different together.Automating services in your business through a great user experience system." />
+          <WelcomeNote message="Tech Dynasty is a top notch information technologies firm that give unique and absolutely innovative IT solutions with unmatched quality and innovative ideas in designing and development. " />
+          <NavHola href="/" name="Get Started"></NavHola>          
         </div>
       </section>
     );
