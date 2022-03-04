@@ -46,9 +46,11 @@ export class Featured extends React.Component {
   render() {
     return (
       <section className="featured-section">
+        <div className="featured-header">
         <DarkTextBox lightText="Whats up" />
         <LightTextBox darkText="Lol this is react" />
         <LightTextBox darkText="this is also a react component" />
+        </div>
         <div className="featured-cards">
           <FeaturedCard
             img={firstCard.img}

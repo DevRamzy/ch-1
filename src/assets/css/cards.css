@@ -30,9 +30,10 @@
   color: #fff;
   box-shadow: 0 0 2rem #eee;
   border: none;
-  border-radius: 1rem;
-  font-size: 1rem;
-  font-weight: 700;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 .nav-hola:hover {
   background-image: linear-gradient(45deg, #f3ec78, #af4261);
@@ -65,15 +66,35 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  text-decoration: none;
+  font-family: astro;
+  letter-spacing: 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 .nav-logo:hover {
   background-image: linear-gradient(to right, #4cb8c4 0%, #3cd3ad 51%, #4cb8c4 100%);
 }
 
-.nav-logo {
-  text-decoration: none;
-  font-family: astro;
-  letter-spacing: 0.3rem;
-  font-size: 1.3rem;
-  font-weight: 500;
+.light-text-box {
+  color: #000;
+  background-color: #eee;
+  width: 18rem;
+  text-align: center;
+}
+
+.dark-text-box {
+  color: #eee;
+  text-align: center;
+  width: 20rem;
+  background-color: #000;
+}
+
+.featured-card {
+  width: 18rem;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

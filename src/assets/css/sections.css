@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: grey;
+  backdrop-filter: blur(1rem);
+  height: 3.5rem;
   transition: all 0.3s ease-out;
 }
 .mainNav li {
@@ -16,6 +17,16 @@
   height: 80vh;
   width: 100%;
 }
+.hero::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(120deg, #000000, #33d0ff);
+  opacity: 0.5;
+  transform: translate(0%, 0%);
+}
 .hero .hero-content {
   transform: translate(25%, -50%);
   position: absolute;
@@ -25,10 +36,24 @@
   width: 50%;
   border: none;
   padding: 1rem;
+  z-index: 2;
 }
 
 .welcome-note p {
   color: antiquewhite;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.2rem;
+}
+
+.featured-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.featured-section .featured-cards {
+  display: inherit;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
