@@ -29,12 +29,14 @@ export class Navbar extends React.Component {
     return (
       <nav className="mainNav">
         <NavLogo />
+        <div className="navLinks">
         <NavLink name="Home" />
         <NavLink name="Service" />
         <NavLink name="Pricing" />
         <NavLink name="Contact" />
         <NavLink name="Blog" />
         <NavHola name="Button" href="./" />
+        </div>
       </nav>
     );
   }

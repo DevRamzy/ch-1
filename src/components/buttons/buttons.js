@@ -9,7 +9,7 @@ export class NavLink extends React.Component {
         href="./"
         variant="text"
         className="nav-button">
-        <li>{this.props.name}</li>
+        {this.props.name}
       </a>
     );
   }
