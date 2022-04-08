@@ -12,6 +12,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../assets/css/styles.css";
 import "../assets/css/sections.css";
 
+// Import Images
+import featured1 from "../assets/images/featured1.png";
+
 // Welcome Section
 export class Welcome extends React.Component {
   render() {
@@ -19,16 +22,16 @@ export class Welcome extends React.Component {
       <section
         className="hero"
         style={{
-          backgroundImage:
-            "url(/images/bg-1.jpg)",
+          backgroundImage: "url(/images/bg1.webp)",
           backgroundSize: "100% auto",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-        }}>
+        }}
+      >
         <div className="hero-content">
           <WelcomeNote message="You're different. So are we. Let's be different together.Automating services in your business through a great user experience system." />
           <WelcomeNote message="Tech Dynasty is a top notch information technologies firm that give unique and absolutely innovative IT solutions with unmatched quality and innovative ideas in designing and development. " />
-          <NavHola href="/" name="Get Started"></NavHola>          
+          <NavHola href="/" name="Get Started"></NavHola>
         </div>
       </section>
     );
@@ -38,8 +41,18 @@ export class Welcome extends React.Component {
 /** Featured section  */
 
 const firstCard = {
-  img: "../assets/images/preview.jpg",
-  feature: "whats up guys",
+  img: require("../assets/images/featured1.png"),
+  feature: "Web & App Design",
+  text: "this feature is really new have a look and share what you think",
+};
+const secondCard = {
+  img: require("../assets/images/featured2.png"),
+  feature: "Web & App Development",
+  text: "this feature is really new have a look and share what you think",
+};
+const thirdCard = {
+  img: require("../assets/images/featured3.png"),
+  feature: "Digital Marketing",
   text: "this feature is really new have a look and share what you think",
 };
 export class Featured extends React.Component {
@@ -47,9 +60,9 @@ export class Featured extends React.Component {
     return (
       <section className="featured-section">
         <div className="featured-header">
-        <DarkTextBox lightText="Whats up" />
-        <LightTextBox darkText="Lol this is react" />
-        <LightTextBox darkText="this is also a react component" />
+          <DarkTextBox lightText="What we can do for you" />
+          <LightTextBox darkText="Our Featured Services" />
+          <LightTextBox darkText="This are the main services that we offer at Tech Dynasty." />
         </div>
         <div className="featured-cards">
           <FeaturedCard
@@ -58,14 +71,14 @@ export class Featured extends React.Component {
             text={firstCard.text}
           />
           <FeaturedCard
-            img={firstCard.img}
-            feature={firstCard.feature}
-            text={firstCard.text}
+            img={secondCard.img}
+            feature={secondCard.feature}
+            text={secondCard.text}
           />
           <FeaturedCard
-            img={firstCard.img}
-            feature={firstCard.feature}
-            text={firstCard.text}
+            img={thirdCard.img}
+            feature={thirdCard.feature}
+            text={thirdCard.text}
           />
         </div>
       </section>
@@ -129,10 +142,7 @@ export class PartnersSection extends React.Component {
         <div className="partners-list">
           <ul>
             <li>
-              <img
-                src={require("../assets/images/patner-1.png")}
-                alt=""
-              />
+              <img src={require("../assets/images/patner-1.png")} alt="" />
             </li>
             <li></li>
           </ul>
