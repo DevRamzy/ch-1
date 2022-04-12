@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Typewriter, useTypewriter, Cursor } from "react-simple-typewriter";
+
 import {
   DarkTextBox,
   LightTextBox,
@@ -11,9 +13,6 @@ import { NavHola } from "./buttons/buttons";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../assets/css/styles.css";
 import "../assets/css/sections.css";
-
-// Import Images
-import featured1 from "../assets/images/featured1.png";
 
 // Welcome Section
 export class Welcome extends React.Component {
@@ -29,8 +28,11 @@ export class Welcome extends React.Component {
         }}
       >
         <div className="hero-content">
-          <WelcomeNote message="You're different. So are we. Let's be different together.Automating services in your business through a great user experience system." />
-          <WelcomeNote message="Tech Dynasty is a top notch information technologies firm that give unique and absolutely innovative IT solutions with unmatched quality and innovative ideas in designing and development. " />
+          <WelcomeNote
+            message="Our focus is building digital products that gain traction and succeed. If you have the vision for a high-value 
+          product, we would love to start a conversation and bring your ideas to life."
+          />
+          <WelcomeNote message=" " />
           <NavHola href="/" name="Get Started"></NavHola>
         </div>
       </section>
@@ -91,17 +93,42 @@ export class AboutSection extends React.Component {
   render() {
     return (
       <section className="about-section container">
-        <div className="row">
-          <div className="col-md-5">
-            <img src="about-1.jpg" alt="" />
-            <img src="about-2.jpg" alt="" />
+        <div className=" about-sec">
+          <div className="image-sec">
+            <div className="abt-img1">
+              <img src={require("../assets/images/about1.jpg")} alt="" />
+            </div>
+            <div className="abt-img2">
+              <img src={require("../assets/images/about2.jpg")} alt="" />
+            </div>
           </div>
-          <div className="col-md-5">
+
+          <div className="content">
             <DarkTextBox lightText="About Section" />
-            <LightTextBox darkText="Heading" />
-            <LightTextBox darkText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, culpa." />
-            <LightTextBox darkText="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi corporis cum numquam fugiat suscipit odit est doloribus expedita aut eos." />
-            <NavHola name="More..." href="./" />
+            <p className="typewriter">
+              Experience World-class Agile Product Development{" "}
+              {/* <Typewriter
+                words={[(this.darkText = "Heading")]}
+                loop={5}
+                cursor
+                cursorStyle="|"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              /> */}
+            </p>
+
+            <LightTextBox
+              darkText="Harness digitized business solutions comprising web, 
+                        android and iOS app solutions leveraging Blockchain, AI Chatbots, Machine 
+                        Learning and IoT technologies for your startup or enterprise.
+                        Tech Dynasty is a top notch information technologies 
+                        firm that give unique and absolutely innovative IT 
+                        solutions with unmatched quality and innovative ideas in 
+                        designing and development."
+            />
+            <LightTextBox darkText="Let's Start a New Project Together" />
+            <NavHola name="Request a Quote" href="./" />
           </div>
         </div>
       </section>
@@ -115,12 +142,11 @@ export class ServicesSection extends React.Component {
     return (
       <section className="service-section">
         <div className="service-header">
-          <DarkTextBox lightText="Whats up" />
+          <DarkTextBox lightText="Our Services" />
           <LightTextBox darkText="Lol this is react" />
           <LightTextBox darkText="this is also a react component" />
         </div>
         <div className="service-cards">
-          <ServicesCard />
           <ServicesCard />
           <ServicesCard />
           <ServicesCard />

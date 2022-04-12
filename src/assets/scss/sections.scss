@@ -63,7 +63,7 @@
     backdrop-filter: blur(5rem);
     color: #ffff;
     margin: auto;
-    width: 50%;
+    width: 40%;
     border: none;
     padding: 1rem;
     z-index: 2;
@@ -82,6 +82,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   .featured-header {
     margin-top: 5rem;
     display: flex;
@@ -95,5 +96,57 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+  }
+}
+
+// About Section
+.about-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65vh;
+  margin: 5rem 0 5rem 0;
+  .about-sec {
+    width: 80%;
+    display: flex;
+    text-align: left;
+    .image-sec {
+      width: 40%;
+      height: 100%;
+      img {
+        width: 20rem;
+        border-radius: 2rem;
+        height: 100%;
+      }
+      .abt-img1 {
+        padding: 1rem;
+        margin-left: -5rem;
+      }
+      .abt-img2 {
+        margin-top: -28rem;
+      }
+    }
+    .content {
+      margin-left: 5rem;
+      width: 60%;
+      height: 70%;
+    }
+  }
+}
+
+// Services Section
+.service-section {
+  width: 100%;
+  height: 70vh;
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  .service-cards {
+    display: flex;
   }
 }

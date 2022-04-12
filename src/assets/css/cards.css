@@ -30,7 +30,6 @@
 .nav-hola {
   background-image: -webkit-gradient(linear, left top, right top, from(#4cb8c4), color-stop(51%, #3cd3ad), to(#4cb8c4));
   background-image: linear-gradient(to right, #4cb8c4 0%, #3cd3ad 51%, #4cb8c4 100%);
-  margin: 1rem;
   padding: 0.6rem 1.2rem;
   text-align: center;
   -webkit-transition: 0.5s;
@@ -89,8 +88,6 @@
 
 .light-text-box {
   color: #ffffff;
-  width: 50%;
-  text-align: center;
 }
 
 .dark-text-box {
@@ -125,6 +122,7 @@
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
   transition: transform 0.2s, -webkit-transform 0.2s;
+  background-color: #060606;
 }
 
 .featured-card:hover {
@@ -155,4 +153,5 @@
   text-align: center;
   margin-top: 1.5rem;
   padding: 0 1.4rem;
+  color: #969696;
 }
