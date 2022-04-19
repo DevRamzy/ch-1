@@ -1,25 +1,25 @@
 @font-face {
   font-family: "sharp sans";
-  src: local("Sharp Sans"),
-    url(../fonts/sharp-sans.otf) format("truetype");
-    
+  src: local("Sharp Sans"), url(../fonts/sharp-sans.otf) format("truetype");
 }
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+
   /* border: whitesmoke 2px solid; */
 }
 
 .body {
-  font-family:
-  "sharp sans en", "sharp sans accents",
-  "sharp sans symbols", "sharp sans", Arial, sans-serif;
-;  
+  font-family: Inter, sans-serif "sharp sans en", "sharp sans accents",
+    "sharp sans symbols", "sharp sans", Arial, sans-serif;
   background-image: linear-gradient(
-  90deg,
-  #16040c,
-  #070a0a,  #000000,  #000000,  #000000,
-  #020e11);
+    90deg,
+    #16040c,
+    #070a0a,
+    #000000,
+    #000000,
+    #000000,
+    #020e11
+  );
   color: whitesmoke;
 }

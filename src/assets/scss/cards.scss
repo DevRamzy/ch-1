@@ -4,12 +4,14 @@
 }
 
 .topbar {
+  font-size: 0.8rem;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 1.5rem;
   background-color: #000;
+  font-family: Inter, sans-serif;
 }
 
 /* .nav-button h5 {
@@ -43,7 +45,7 @@
   font-size: 0.8rem;
   font-weight: 600;
   &:hover {
-    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    background-image: linear-gradient(45deg, #f3ec78, #f34208);
     background-position: right center; /* change the direction of the change here */
     color: #fff;
     text-decoration: none;
@@ -54,9 +56,25 @@
 /* Navbar links */
 .nav-button {
   font-size: 0.9rem;
-  text-decoration: none;
-  list-style: none;
   padding: 1rem;
+  text-decoration: none !important;
+  color: whitesmoke;
+  font-weight: 650;
+  font-size: 1rem;
+  margin-right: 1rem;
+  background-image: linear-gradient(45deg, #f3ec78, #f34208);
+  background-clip: text;
+  background-repeat: repeat;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  &:hover {
+    background-image: linear-gradient(
+      to right,
+      #4cb8c4 0%,
+      #3cd3ad 51%,
+      #4cb8c4 100%
+    );
+  }
 }
 
 /* Nav Logo */
@@ -65,7 +83,7 @@
   background-color: #4cb8c4;
 
   /* Create the gradient. */
-  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  background-image: linear-gradient(45deg, #f3ec78, #f34208);
 
   /* Set the background size and repeat properties. */
   background-size: 100%;
@@ -98,21 +116,30 @@
   // text-align: center;
 }
 .dark-text-box {
-  color: #eee;
   text-align: center;
-  width: 20rem;
+  width: auto;
   background-color: #0f0f11;
-  padding: 0.3rem;
-  font-size: 1rem;
-  text-transform: capitalize;
-  line-height: 1.2rem;
+  padding: 0;
+  margin: 0;
+  p {
+    background-image: linear-gradient(60deg, #f34208, #ffb03a);
+    background-clip: text;
+    color: transparent;
+    line-height: 1.2rem;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding: 0.3rem;
+    margin-bottom: 0;
+  }
 }
 
 // Featured Cards
 .featured-card {
   width: 22rem;
-  height: 30rem;
+  height: auto;
   margin: 3rem;
+  padding: 2rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -142,5 +169,49 @@
     margin-top: 1.5rem;
     padding: 0 1.4rem;
     color: #969696;
+  }
+}
+
+// Footer Links
+
+.footerLinks {
+  .row {
+    display: flex;
+    justify-content: space-evenly;
+    // align-items: center;
+    width: 80%;
+  }
+}
+.usefulLinks,
+.address,
+.otherLinks {
+  list-style: none;
+  h5 {
+    font-weight: 600;
+    background-image: linear-gradient(60deg, #f34208, #ffb03a);
+    background-clip: text;
+    color: transparent;
+  }
+  li {
+    margin-bottom: 0.8rem;
+  }
+  h4 {
+    font-size: 0.8rem;
+
+    padding-left: 1rem;
+    padding-top: 0.4rem;
+    text-decoration: none;
+    color: #ffffff;
+
+    &:hover {
+      background-clip: text;
+      color: transparent;
+      background-image: linear-gradient(
+        to right,
+        #4cb8c4 0%,
+        #3cd3ad 51%,
+        #4cb8c4 100%
+      );
+    }
   }
 }

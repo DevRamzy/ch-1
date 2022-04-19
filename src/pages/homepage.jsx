@@ -11,7 +11,6 @@ import {
   ServicesSection,
   PartnersSection,
 } from "../components/sections";
-import { Footer } from "../components/footer";
 
 // Import CSS
 import "../assets/css/styles.css";
@@ -27,16 +26,12 @@ export class HomePage extends React.Component {
   render() {
     return (
       <body className="body">
-        <TopBar message="New site Look: Cheers!!"></TopBar>
-        <header className="header">
-          <Navbar></Navbar>
-        </header>
+        <header className="header"></header>
         <Welcome />
         <Featured />
         <AboutSection />
         <ServicesSection />
         <PartnersSection></PartnersSection>
-        <Footer />
       </body>
     );
   }

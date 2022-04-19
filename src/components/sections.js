@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Typewriter, useTypewriter, Cursor } from "react-simple-typewriter";
+import { Typewriter } from "react-simple-typewriter";
 
 import {
   DarkTextBox,
@@ -33,7 +33,7 @@ export class Welcome extends React.Component {
           product, we would love to start a conversation and bring your ideas to life."
           />
           <WelcomeNote message=" " />
-          <NavHola href="/" name="Get Started"></NavHola>
+          <NavHola href="/" name="Get Intouch"></NavHola>
         </div>
       </section>
     );
@@ -42,21 +42,23 @@ export class Welcome extends React.Component {
 
 /** Featured section  */
 
-const firstCard = {
-  img: require("../assets/images/featured1.png"),
-  feature: "Web & App Design",
-  text: "this feature is really new have a look and share what you think",
-};
-const secondCard = {
-  img: require("../assets/images/featured2.png"),
-  feature: "Web & App Development",
-  text: "this feature is really new have a look and share what you think",
-};
-const thirdCard = {
-  img: require("../assets/images/featured3.png"),
-  feature: "Digital Marketing",
-  text: "this feature is really new have a look and share what you think",
-};
+const featuredArray = [
+  {
+    img: require("../assets/images/featured1.png"),
+    feature: "Web & App Design",
+    text: "We provide exceptional and strategic design that compliments your brand and accomplishes your goals.",
+  },
+  {
+    img: require("../assets/images/featured2.png"),
+    feature: "Web & App Development",
+    text: "We use the latest emerging technology such as NextJs, JavaScript, Laravel, ReactJS and Flutter to code your product’s infrastructure.",
+  },
+  {
+    img: require("../assets/images/featured3.png"),
+    feature: "Digital Marketing",
+    text: "We can help you create a great plan for your online marketing efforts, and we'll walk the journey with you each step of the way.",
+  },
+];
 export class Featured extends React.Component {
   render() {
     return (
@@ -67,21 +69,11 @@ export class Featured extends React.Component {
           <LightTextBox darkText="This are the main services that we offer at Tech Dynasty." />
         </div>
         <div className="featured-cards">
-          <FeaturedCard
-            img={firstCard.img}
-            feature={firstCard.feature}
-            text={firstCard.text}
-          />
-          <FeaturedCard
-            img={secondCard.img}
-            feature={secondCard.feature}
-            text={secondCard.text}
-          />
-          <FeaturedCard
-            img={thirdCard.img}
-            feature={thirdCard.feature}
-            text={thirdCard.text}
-          />
+          {featuredArray.map(({ img, feature, text }) => (
+            <div>
+              {<FeaturedCard img={img} feature={feature} text={text} />}
+            </div>
+          ))}
         </div>
       </section>
     );
@@ -104,18 +96,21 @@ export class AboutSection extends React.Component {
           </div>
 
           <div className="content">
-            <DarkTextBox lightText="About Section" />
+            <DarkTextBox lightText="About" />
             <p className="typewriter">
-              Experience World-class Agile Product Development{" "}
-              {/* <Typewriter
-                words={[(this.darkText = "Heading")]}
-                loop={5}
+              {" "}
+              <Typewriter
+                words={[
+                  (this.darkText =
+                    "Experience World-class Agile Product Development"),
+                ]}
+                loop={1}
                 cursor
                 cursorStyle="|"
                 typeSpeed={70}
                 deleteSpeed={50}
                 delaySpeed={1000}
-              /> */}
+              />
             </p>
 
             <LightTextBox
@@ -123,7 +118,7 @@ export class AboutSection extends React.Component {
                         android and iOS app solutions leveraging Blockchain, AI Chatbots, Machine 
                         Learning and IoT technologies for your startup or enterprise.
                         Tech Dynasty is a top notch information technologies 
-                        firm that give unique and absolutely innovative IT 
+                        firm that gives unique and absolutely innovative IT 
                         solutions with unmatched quality and innovative ideas in 
                         designing and development."
             />
@@ -137,19 +132,42 @@ export class AboutSection extends React.Component {
 }
 
 // Service Section Home page
+
+const serviceArray = [
+  {
+    img: require("../assets/images/blog3.jpg"),
+    feature: "Virtual reality",
+    text: "this feature is really new have a look and share what you think",
+  },
+
+  {
+    img: require("../assets/images/blog2.jpg"),
+    feature: "Ui Design Best Practices",
+    text: "this feature is really new have a look and share what you think",
+  },
+
+  {
+    img: require("../assets/images/blog1.jpg"),
+    feature: "The Big Crash",
+    text: "this feature is really new have a look and share what you think",
+  },
+];
+
 export class ServicesSection extends React.Component {
   render() {
     return (
       <section className="service-section">
         <div className="service-header">
-          <DarkTextBox lightText="Our Services" />
-          <LightTextBox darkText="Lol this is react" />
-          <LightTextBox darkText="this is also a react component" />
+          <DarkTextBox lightText="News and Information" />
+          <LightTextBox darkText="Our Blog" />
+          <LightTextBox darkText="Check out whats happening in the tech world" />
         </div>
         <div className="service-cards">
-          <ServicesCard />
-          <ServicesCard />
-          <ServicesCard />
+          {serviceArray.map(({ img, feature, text }) => (
+            <div>
+              {<ServicesCard img={img} feature={feature} text={text} />}
+            </div>
+          ))}
         </div>
       </section>
     );
@@ -162,16 +180,26 @@ export class PartnersSection extends React.Component {
     return (
       <section className="patners-sec-container">
         <div className="partners-sec-header">
-          <LightTextBox darkText="Lol this is react" />
-          <LightTextBox darkText="this is also a react component" />
+          <DarkTextBox lightText="Tools and Software" />
+          <LightTextBox darkText="Technologies" />
+          <LightTextBox
+            darkText="This are the various tools and technologies
+          we use to create and deploy our applications"
+          />
         </div>
         <div className="partners-list">
-          <ul>
-            <li>
-              <img src={require("../assets/images/patner-1.png")} alt="" />
-            </li>
-            <li></li>
-          </ul>
+          <div className="tools">
+            <img src={require("../assets/images/react.png")} alt="" />
+            <img src={require("../assets/images/js.png")} alt="" />
+            <img src={require("../assets/images/html.png")} alt="" />
+            <img src={require("../assets/images/sass.png")} alt="" />
+            <img src={require("../assets/images/css.png")} alt="" />
+            <img src={require("../assets/images/Wordpress.png")} alt="" />
+            <img src={require("../assets/images/git.png")} alt="" />
+            <img src={require("../assets/images/git2.png")} alt="" />
+            <img src={require("../assets/images/firebase.png")} alt="" />
+            <img src={require("../assets/images/xd.png")} alt="" />
+          </div>
         </div>
       </section>
     );
